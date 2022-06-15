@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.section-1{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 8%;
+}
+
+.container h1 {
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+}
+
+.container h1::after {
+  content: '';
+  background: #006E51;
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.service {
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.5s, background 0.5s;
+}
+
+.service i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #006E51;
+}
+
+.service h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.service:hover {
+  background: #006E51;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.service:hover i {
+  color: #fff;
+}
+
+
+
+
+.section-2 {
+    padding: 5vmin 0vmin;
+    height: 120vh;
+  }
+  
+  .section-2 .row .col-md-6 .pray img {
+    opacity: 0.8;
+    height: 600px;
+    width: 80%;
+    border-radius: 0.2em;
+  }
+  
+  .section-2 .row .col-md-6:last-child {
+    position: relative;
+  }
+  
+  .section-2 .row .col-md-6 .panel {
+    position: absolute;
+    width: 105%;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 6vmin 6vmin 6vmin 6vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+  }
+  .section-2 .row .col-md-6 .panel .text-left{
+    background-color: black;
+  }
+  
+  .section-2 .row .col-md-6 .panel h1 {
+    color: #006E51;
+    font-weight: bold;
+    padding: 0.2em 0;
+    font-size: 2em;
+  }
+  
+  .section-2 .row .col-md-6 .panel p {
+    font-size: 1.0em;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  @media only screen and (max-width: 1200px) {
+    /* For mobile phones: */
+    .section-2{
+        height: 105vh;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .section-2{
+        height: 150vh;
+    }
+    .section-2 .row .col-md-6 .panel {
+        position: absolute;
+        width: 100%;
+        top: 7vmin;
+        left: 0vmin;
+        background: white;
+        border-radius: 3px;
+        text-align: left;
+        padding: 6vmin 6vmin 6vmin 6vmin;
+        box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+        font-family: var(--Rubik);
+        z-index: 1;
+      }
+  }
+
+
+
+footer {
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 7vmin 9vmin;
+  }
+  
+  footer p > span {
+    color: #006E51;
+  }
+  
+  footer input {
+    border: none !important;
+  }
+  
+  footer input::placeholder {
+    color: white !important;
+  }
+  
+  footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+  }
+  
+  footer .column i {
+    color: #006E51;
+  }
+  
+  /* It is Adjacent sibling combinator */
+  
+  footer .column i + i {
+    padding: 0 0.5em;
+  }
